@@ -1,0 +1,87 @@
+@import url('configs.css');
+@import url('colors.css');
+@import url('modal.css');
+
+div#app {
+	background-color: var(--primary-color);
+	border-radius: 10px;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+	color: var(--text-color);
+	font-size: 16pt;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	overflow: hidden;
+	width: 80%;
+	height: 80vw;
+	max-width: 300px;
+	max-height: 300px;
+}
+div#app div {
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	width: calc(100% / 3);
+	height: calc(100% / 3);
+}
+div#app div:nth-child(1),
+div#app div:nth-child(4),
+div#app div:nth-child(7) {
+	border-right: 1px solid var(--secondary-color);
+}
+div#app div:nth-child(1),
+div#app div:nth-child(2),
+div#app div:nth-child(3) {
+	border-bottom: 1px solid var(--secondary-color);
+}
+div#app div:nth-child(7),
+div#app div:nth-child(8),
+div#app div:nth-child(9) {
+	border-top: 1px solid var(--secondary-color);
+}
+div#app div:nth-child(3),
+div#app div:nth-child(6),
+div#app div:nth-child(9) {
+	border-left: 1px solid var(--secondary-color);
+}
+
+div#placar {
+	background-color: var(--primary-color);
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	max-width: 500px;
+	height: 40px;
+	position: fixed;
+	top: 20px;
+}
+
+div#placar p {
+	color: var(--text-color);
+	font-size: 12pt;
+}
+
+button#restart {
+	background-color: var(--primary-color);
+	border-radius: 5px;
+	color: var(--text-color);
+	cursor: pointer;
+	font-size: 12pt;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 35%;
+	max-width: 150px;
+	height: 40px;
+	margin-top: 40px;
+	/*position: fixed;
+	bottom: 50px;*/
+}
+button#restart:active {
+	background-color: #233567;
+	font-size: 11pt;
+}

@@ -1,0 +1,74 @@
+@import url('configs.css');
+@import url('colors.css');
+
+div.modal-container {
+	background-color: rgba(0, 0, 0, 0.75);
+
+	display: none;
+	align-items: center;
+	justify-content: center;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+}
+div.modal-container.mostrar {
+	display: flex;
+}
+div.modal-container.mostrar div.modal {
+	animation: mostrar 0.5s ease;
+}
+@keyframes mostrar {
+	from {
+		margin-bottom: 300px;
+	}
+	to {
+		margin-bottom: 0;
+	}
+}
+
+div.modal-container div.modal {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	background-color: var(--primary-color);
+	border: 5px solid var(--bg-color);
+	box-shadow: 0px 0px 0px 5px var(--primary-color);
+	border-radius: 5px;
+
+	padding: 40px 20px;
+	width: 80%;
+	max-width: 300px;
+}
+div.modal-container div.modal p {
+	color: var(--bg-color);
+	font-size: 14pt;
+	text-align: center;
+}
+div.modal-container div.modal button {
+	background-color: var(--bg-color);
+	color: var(--primary-color);
+	font-size: 12pt;
+
+	border-radius: 5px;
+	cursor: pointer;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin-top: 20px;
+
+	width: 70%;
+	height: 40px;
+}
+div.modal-container div.modal button:active {
+	background-color: #233567;
+	color: var(--bg-color);
+	font-size: 11pt;
+}
