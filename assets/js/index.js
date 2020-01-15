@@ -98,6 +98,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		if (target.className === 'restart') {
 			Game.restart();
 			Modal.close();
+		} else {
+			Modal.close();
 		}
 	});
 
